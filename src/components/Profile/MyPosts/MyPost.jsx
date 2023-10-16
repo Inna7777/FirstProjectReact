@@ -1,6 +1,6 @@
 import React from "react";
 import p from './MyPost.module.css'
-import Post1 from "./Post/Post1";
+import Post from "./Post/Post";
 
 
 const MyPost = ()=>{
@@ -9,8 +9,8 @@ const MyPost = ()=>{
       <div>
           New post
         </div>
-        <Post1 message="Hi, how ara you" count="19"/>
-        <Post1 message="Hi, it my post" count="20"/>
+        <Post message="Hi, how ara you" count="19" name="Зоя"/>
+        <Post message="Hi, it my post" count="20"/>
     </div>
  
 }

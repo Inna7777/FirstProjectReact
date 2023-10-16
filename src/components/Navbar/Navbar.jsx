@@ -1,6 +1,6 @@
 import React from "react";
-import s from './Nav.module.css'
-const Nav = ()=>{
+import s from './Navbar.module.css'
+const Navbar = ()=>{
     return <div className={s.nav}>
     <div className={s.item}>
       <a href="k">Profile</a>
@@ -13,4 +13,4 @@ const Nav = ()=>{
     </div>
   </div>
 }
- export default Nav;
+ export default Navbar;

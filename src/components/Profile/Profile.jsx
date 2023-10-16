@@ -5,7 +5,7 @@ import MyPost from "./MyPosts/MyPost";
 
 
 const Post = ()=>{
-    return  <div className={p.content}>
+    return  <div >
     <div>
       {" "}
       <img src="https://goo.su/xQAY"  alt=""/>

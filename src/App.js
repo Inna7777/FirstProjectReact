@@ -1,17 +1,22 @@
 import React from "react";
 import "./styles/App.css";
- 
-import Header from "./components/Header/Header";
-import Nav from "./components/Nav/Nav";
 
-import Profile from "./components/Profile/Post";
+import Header from "./components/Header/Header";
+import Navbar from "./components/Navbar/Navbar";
+import Dialogs from "./components/Dialogs/Dialogs";
+
+import Profile from "./components/Profile/Profile";
 
 const App = () => {
   return (
     <div className="app-wrapper">
-      <Header/>
-      <Nav/>
-     <Profile/>
+      <Header />
+      <Navbar />
+      
+      <div className = 'app-wrapper-content'>
+        <Dialogs />
+      </div>
+      {/* <Profile/> */}
     </div>
   );
 };
