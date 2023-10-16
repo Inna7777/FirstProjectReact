@@ -6,10 +6,10 @@ const Nav = ()=>{
       <a href="k">Profile</a>
     </div>
     <div className={s.item}>
-      <a >Music</a>
+      <a  href="n">Music</a>
     </div>
     <div className={`${s.item} ${s.active}`}>
-      <a >News</a>
+      <a href="h" >News</a>
     </div>
   </div>
 }
