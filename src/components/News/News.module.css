@@ -1,0 +1,9 @@
+.new{
+    background-color: rgb(181, 216, 183);
+    font-size: large;
+    color: brown;
+}
+.newImg img{
+    
+    width: 100px;
+}
