@@ -13,8 +13,7 @@
     
   }
 
-  .item a.activeLink {
-    color: gold;
-    
-  }
- 
+  .item .activeLink  {
+    color: rgb(209, 180, 35);
+  } 
+  

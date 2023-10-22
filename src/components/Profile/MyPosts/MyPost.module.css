@@ -1,8 +1,11 @@
 
 .post{
   color: rgb(10, 31, 73);
-  font-size: 48px ;
-
+  
+  padding: 10px;
 }
   
+.posts{
+  padding: 10px;
+}
  

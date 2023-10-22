@@ -1,19 +1,15 @@
 import React from "react";
-import p from './Profile.module.css'
+import p from "./Profile.module.css";
 import MyPost from "./MyPosts/MyPost";
+import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
-
-
-const Post = ()=>{
-    return  <div >
+const Post = () => {
+  return (
     <div>
-      
-      <img src="https://goo.su/xQAY"  alt=""/>
+      <ProfileInfo />
+
+      <MyPost />
     </div>
-    <div> ava+ description</div>
-      
-    <MyPost/>
-    
-  </div>
-}
- export default Post;
+  );
+};
+export default Post;
