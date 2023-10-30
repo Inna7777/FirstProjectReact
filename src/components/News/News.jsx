@@ -1,5 +1,6 @@
 import React from "react";
 import style from './News.module.css'
+import  {useState} from "react";
 
 
 const News = (props) => {
@@ -15,6 +16,24 @@ let namesArray=[
         </div>
     )
  })
+  
+ 
+const [likes, setLikes] = useState(0)
+const [word, setWord] = useState("Приложение работает")
+const [value, setValue] = useState('Tekst in input')
+
+ function increment(){
+    setLikes(likes +1)
+ }
+
+ function decrement(){
+    setLikes(likes -1)
+ }
+
+function working() {
+    (word === "Приложение работает") ? setWord("Приложение не работает"): setWord("Приложение работает");
+   
+}
 
     return(
         <div className={style.new}>
@@ -25,6 +44,15 @@ let namesArray=[
             <div className={style.name}>
                 {ListName}
             </div>
+            <h1>{likes}</h1>
+            <div>{word}</div>
+            <h1>{value}</h1>
+            <input type = 'text'
+             value={value} 
+             onChange = {event => setValue(event.target.value)}/>
+            <button onClick= {working}>кнопка</button>
+            <button onClick={increment}>Increment</button>
+            <button onClick={decrement}>Decrement</button>
         </div>
     )
 }

@@ -1,0 +1,16 @@
+
+.positionPicture img {
+    width: 300px;
+    border: solid 2px cornflowerblue;
+}
+
+.positionPicture {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr );
+    gap:20px;
+    justify-items: center;
+}
+.myBtns{
+    display: flex;
+    justify-content: space-around;
+}
