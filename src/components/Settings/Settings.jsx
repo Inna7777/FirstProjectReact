@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import style from './Settings.module.css'
+import NewSwiper from "../NewSwiper/NewSwiper";
 let picture = [
     {url:"https://goo.su/xQAY", id:'logo1', name:"Inna"},
     {url: "https://goo.su/xQAY", id:'logo2'},
@@ -23,6 +24,8 @@ const Settings = ()=>{
         <div>
             <img src={p.url} alt={p.id}/>
             {p.name}
+            
+           
         </div>
     )
  })
@@ -47,7 +50,7 @@ const Settings = ()=>{
     );
   });
   
-  const [text, deletText] = useState("Техt")
+  const [text, deletText] = useState("Text")
 
   function setDelete (){
      deletText();
@@ -55,7 +58,7 @@ const Settings = ()=>{
   const [textToo, deleteTextInput] = useState('Hello')
 
   function setZero(){
-     deleteTextInput("ehf");
+     deleteTextInput("-");
   }
 
   
@@ -71,7 +74,9 @@ return(
     <h1>{text}</h1>
     <button onClick={setZero}>delete</button>
     <input type = 'text' value={textToo} />
-
+    <div>
+               <NewSwiper/>
+            </div>
     </div>
   
 )

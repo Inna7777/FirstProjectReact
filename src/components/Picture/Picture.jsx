@@ -57,6 +57,7 @@ const ListPicture = (props) => {
       </div>
       <div className={style.myBtns}>
          {btn.map((item =>(<button onClick={() => change(item.id)}>{item.name}</button>)))}
+                
 
          {btn.map((item => (
           <MyButton  onClick={() => change(item.id)}>{item.name}</MyButton>)))} 

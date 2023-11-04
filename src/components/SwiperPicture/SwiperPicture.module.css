@@ -1,0 +1,28 @@
+.viewButton button {
+   
+    width: 100px;
+    height: 30px;
+    border: solid 2px rgb(88, 101, 150);
+    background-color: rgb(218, 227, 240);
+    color: rgb(65, 87, 111);
+    border-radius: 60px;
+
+
+}
+.viewButton {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px ;
+}
+
+.divPucture img{
+    width: 200px;
+    padding: 10px;
+}
+
+.divPucture{
+    display: flex;
+   justify-content: space-between;
+    
+   
+}

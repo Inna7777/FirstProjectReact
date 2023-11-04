@@ -7,7 +7,9 @@ import Profile from "./components/Profile/Profile";
 import News from "./components/News/News";
 import Settings from "./components/Settings/Settings";
 import Picture from "./components/Picture/Picture";
+import SwiperPicture from "./components/SwiperPicture/SwiperPicture";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import SliderShow from "./components/SliderShow/SliderShow";
 
 const App = (props) => { 
   
@@ -25,6 +27,9 @@ const App = (props) => {
             <Route path="/news" element={<News />} />
             <Route path="/settings" element={<Settings/>} />
             <Route path="/pictures" element={<Picture/>} />
+            <Route path="/swiperpictures" element={<SwiperPicture/>} />            
+            <Route path="/slidershow" element={<SliderShow/>} />
+            
           </Routes>
           {/* <Profile/> */}
           {/* <Dialogs/> */}
