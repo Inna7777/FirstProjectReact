@@ -41,7 +41,7 @@ let btn = [
 const ListPicture = (props) => {
   const [state, setState] = useState(null);
 
-  function change(id) {
+  function findOnId(id) {
     setState(id);
     console.log(id);
   }
@@ -56,11 +56,11 @@ const ListPicture = (props) => {
         {selectionArray.map((el) =><img src={el.line} alt={el.id}/>)}
       </div>
       <div className={style.myBtns}>
-         {btn.map((item =>(<button onClick={() => change(item.id)}>{item.name}</button>)))}
+         {btn.map((item =>(<button onClick={() => findOnId(item.id)}>{item.name}</button>)))}
                 
 
          {btn.map((item => (
-          <MyButton  onClick={() => change(item.id)}>{item.name}</MyButton>)))} 
+          <MyButton  onClick={() => findOnId(item.id)}>{item.name}</MyButton>)))} 
       </div>
     </div>
   );

@@ -10,6 +10,7 @@ import Picture from "./components/Picture/Picture";
 import SwiperPicture from "./components/SwiperPicture/SwiperPicture";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SliderShow from "./components/SliderShow/SliderShow";
+import Effect from "./components/UseEffect/Effect";
 
 const App = (props) => { 
   
@@ -29,6 +30,7 @@ const App = (props) => {
             <Route path="/pictures" element={<Picture/>} />
             <Route path="/swiperpictures" element={<SwiperPicture/>} />            
             <Route path="/slidershow" element={<SliderShow/>} />
+            <Route path="/effect" element={<Effect/>} />
             
           </Routes>
           {/* <Profile/> */}

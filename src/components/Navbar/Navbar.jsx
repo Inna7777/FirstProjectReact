@@ -25,6 +25,9 @@ const Navbar = () => {
         <div className={`${s.item} ${s.active}`}>
         <NavLink to="/slidershow" activeClassName={s.activeLink}>SliderShow</NavLink>
         </div>
+        <div className={`${s.item} ${s.active}`}>
+        <NavLink to="/effect" activeClassName={s.activeLink}>Effect</NavLink>
+        </div>
     </nav>
   ) 
 }
