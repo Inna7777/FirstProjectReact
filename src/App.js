@@ -13,6 +13,7 @@ import SliderShow from "./components/SliderShow/SliderShow";
 import Effect from "./components/UseEffect/Effect";
 import ModalWindow from "./components/ModalWindow/ModalWindow";
 
+
 const App = (props) => { 
   
   return (
@@ -33,6 +34,7 @@ const App = (props) => {
             <Route path="/slidershow" element={<SliderShow/>} />
             <Route path="/effect" element={<Effect/>} />
             <Route path="/modalwindow" element={<ModalWindow/>} />
+            
             
           </Routes>
           {/* <Profile/> */}

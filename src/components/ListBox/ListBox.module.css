@@ -7,7 +7,7 @@
 }
 
 .listbox {
-    list-style-type: none; /* убираем стандартные маркеры списка */
+    list-style-type:lower-greek;
     padding: 0; /* убираем отступы у списка */
   }
   
@@ -17,12 +17,14 @@
     margin-bottom: 10px; /* добавляем отступ между элементами списка */
   }
   
-  .listbox li::before {
+  .listbox ::before {
     display: block;
     position: absolute;
     left: 0;
     top: 0;
-    font-size: 24px; /* размер галочки */
+    font-size: 24px; 
   }
   
-  
+  .listbox li:hover {
+    background-color: #1b8964; /* измените цвет на нужный вам */
+  }

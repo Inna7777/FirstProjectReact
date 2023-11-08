@@ -25,7 +25,7 @@ const ModalWindow = (props) => {
         <div>
           <DialogForm open={isopen} onClose={() => setIsOpen(false)}>
             <p>Ура!!!!!!!!!!!!!!!!!!</p>
-            <MyListBox/>
+                <MyListBox/>
           </DialogForm>
         </div>
       

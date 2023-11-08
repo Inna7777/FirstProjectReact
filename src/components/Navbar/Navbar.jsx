@@ -29,8 +29,9 @@ const Navbar = () => {
         <NavLink to="/effect" activeClassName={s.activeLink}>Effect</NavLink>
         </div>
         <div className={`${s.item} ${s.active}`}>
-        <NavLink to="/modalwindow" activeClassName={s.activeLink}>ModalWindow</NavLink>
+        <NavLink to="/modalwindow" activeClassName={s.activeLink}>ModalWindou</NavLink>
         </div>
+      
     </nav>
   ) 
 }
