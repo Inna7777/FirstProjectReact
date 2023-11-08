@@ -11,6 +11,7 @@ import SwiperPicture from "./components/SwiperPicture/SwiperPicture";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SliderShow from "./components/SliderShow/SliderShow";
 import Effect from "./components/UseEffect/Effect";
+import ModalWindow from "./components/ModalWindow/ModalWindow";
 
 const App = (props) => { 
   
@@ -31,6 +32,7 @@ const App = (props) => {
             <Route path="/swiperpictures" element={<SwiperPicture/>} />            
             <Route path="/slidershow" element={<SliderShow/>} />
             <Route path="/effect" element={<Effect/>} />
+            <Route path="/modalwindow" element={<ModalWindow/>} />
             
           </Routes>
           {/* <Profile/> */}

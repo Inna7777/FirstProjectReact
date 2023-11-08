@@ -1,0 +1,28 @@
+.list{
+    padding: 10px;
+    background-color: rgb(228, 239, 239);
+    border: solid 1px ;
+    border-color: dimgray;
+    
+}
+
+.listbox {
+    list-style-type: none; /* убираем стандартные маркеры списка */
+    padding: 0; /* убираем отступы у списка */
+  }
+  
+  .listbox li {
+    position: relative;
+    padding-left: 30px; /* добавляем отступ слева для галочки */
+    margin-bottom: 10px; /* добавляем отступ между элементами списка */
+  }
+  
+  .listbox li::before {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 24px; /* размер галочки */
+  }
+  
+  

@@ -1,0 +1,25 @@
+.dialogForm{
+    position: fixed;
+    width: 80%;
+    height: 70%;
+    left: 50%;
+    top: 50%;
+    z-index: 99;
+    transform: translate(-50%, -50%);
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup{
+    background-color: rgb(245, 243, 247);
+    max-width: 100%;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.cansel{
+    display: flex;
+    justify-content: end;
+}
