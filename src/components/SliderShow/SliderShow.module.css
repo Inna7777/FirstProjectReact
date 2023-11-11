@@ -24,3 +24,31 @@
     }
     
     
+
+    .container {
+      display: block;
+      padding: 5px;
+      width: 50%;
+      
+  }
+    
+  .inputs{
+      height: 30px;
+      width: 30px;
+    
+    }
+    /*При наведении курсора, делаем цвет фона немного темнее.*/
+    .container:hover {
+      background-color: #8978cc;
+  }
+
+  .container input:checked  {
+    background-color: #636d74;
+}
+ .input:checked {
+ color: aqua;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  
+}
+ 

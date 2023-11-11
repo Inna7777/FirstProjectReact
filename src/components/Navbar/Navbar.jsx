@@ -31,6 +31,9 @@ const Navbar = () => {
         <div className={`${s.item} ${s.active}`}>
         <NavLink to="/modalwindow" activeClassName={s.activeLink}>ModalWindou</NavLink>
         </div>
+        <div className={`${s.item} ${s.active}`}>
+        <NavLink to="/windowdialog" activeClassName={s.activeLink}>WindowDialog</NavLink>
+        </div>
       
     </nav>
   ) 

@@ -12,10 +12,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SliderShow from "./components/SliderShow/SliderShow";
 import Effect from "./components/UseEffect/Effect";
 import ModalWindow from "./components/ModalWindow/ModalWindow";
+import WindowDialog from "./components/WindowDialog/WindowDialog";
 
-
-const App = (props) => { 
-  
+const App = (props) => {
   return (
     <BrowserRouter>
       <div className="app-wrapper">
@@ -23,19 +22,24 @@ const App = (props) => {
         <Navbar />
         <div className="app-wrapper-content">
           <Routes>
-              {/* <Route path="/profile" element={<Profile />} />
+            {/* <Route path="/profile" element={<Profile />} />
             <Route path="/dialogs" element={<Dialogs />} />   */}
-            <Route path="/profile" element={  <Profile postsData={props.postsData} />} />
-            <Route path="/dialogs" element={ <Dialogs dialogsElements={props.dialogsElements} />}/>
+            <Route
+              path="/profile"
+              element={<Profile postsData={props.postsData} />}
+            />
+            <Route
+              path="/dialogs"
+              element={<Dialogs dialogsElements={props.dialogsElements} />}
+            />
             <Route path="/news" element={<News />} />
-            <Route path="/settings" element={<Settings/>} />
-            <Route path="/pictures" element={<Picture/>} />
-            <Route path="/swiperpictures" element={<SwiperPicture/>} />            
-            <Route path="/slidershow" element={<SliderShow/>} />
-            <Route path="/effect" element={<Effect/>} />
-            <Route path="/modalwindow" element={<ModalWindow/>} />
-            
-            
+            <Route path="/settings" element={<Settings />} />
+            <Route path="/pictures" element={<Picture />} />
+            <Route path="/swiperpictures" element={<SwiperPicture />} />
+            <Route path="/slidershow" element={<SliderShow />} />
+            <Route path="/effect" element={<Effect />} />
+            <Route path="/modalwindow" element={<ModalWindow />} />
+            <Route path="/windowdialog" element={<WindowDialog />} />
           </Routes>
           {/* <Profile/> */}
           {/* <Dialogs/> */}
@@ -46,5 +50,3 @@ const App = (props) => {
 };
 
 export default App;
-
-

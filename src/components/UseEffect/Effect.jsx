@@ -16,7 +16,7 @@ const Effect =()=> {
     return() => {
       document.title = `Delete`
     };
-  });
+  },[count, show]);
 
   return (
     <div>

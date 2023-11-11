@@ -7,7 +7,7 @@ const DialogForm =(props)=>{
             <div className={style.dialogForm}>
                 <div className={style.popup}>
                     <div className={style.cansel}>
-                         <button onClick={props.onClose}>X</button>
+                         <button onClick={props.onCancel}>X</button>
                     </div>
                     {props.children}
 
