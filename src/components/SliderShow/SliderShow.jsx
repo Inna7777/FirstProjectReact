@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "./SliderShow.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -21,6 +21,16 @@ const labels =[
 ]
 
 const SliderShow = () => {
+
+
+  const [value, setValue]= useState(0)
+
+  function onChange(event){
+    setValue(event.target.value)
+  }
+
+
+
   return (
     <>
       <Swiper
@@ -64,7 +74,7 @@ const SliderShow = () => {
         </label>
         <label>
             Кнопка ползунок
-            <input type="range"  min="0" max="50"  step='3'/><br/>
+            <input type="range"  min="0" max="50"  step='3' value={value} onChange={onChange}/>{value}<br/>
         </label>
         <label>
             Текстовое поле с фокусом
