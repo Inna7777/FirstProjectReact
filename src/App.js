@@ -13,6 +13,8 @@ import SliderShow from "./components/SliderShow/SliderShow";
 import Effect from "./components/UseEffect/Effect";
 import ModalWindow from "./components/ModalWindow/ModalWindow";
 import WindowDialog from "./components/WindowDialog/WindowDialog";
+import Forms from "./components/Form/Form";
+import FormReactHook from "./components/FormReactHook/FormReactHook";
 
 const App = (props) => {
   return (
@@ -40,6 +42,8 @@ const App = (props) => {
             <Route path="/effect" element={<Effect />} />
             <Route path="/modalwindow" element={<ModalWindow />} />
             <Route path="/windowdialog" element={<WindowDialog />} />
+            <Route path="/forms" element={<Forms />} />
+            <Route path="/formreact" element={<FormReactHook />} />
           </Routes>
           {/* <Profile/> */}
           {/* <Dialogs/> */}
