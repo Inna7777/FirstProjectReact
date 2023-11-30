@@ -7,7 +7,7 @@ const FormReactHook2 = () => {
     handleSubmit,
     formState: { errors },
     reset,
-    watch, 
+    watch, //отслеживает переменные
     setValue    
    
   } = useForm(
@@ -63,7 +63,7 @@ const FormReactHook2 = () => {
         <button>Отправить</button>
        
       </form> 
-      <button onClick={()=> {
+      <button onClick={()=> { // заполнить поля определенными значениями
             setValue('name', 'max')
             setValue('email', 'test@mail.ru')
         }}>Fill data</button>

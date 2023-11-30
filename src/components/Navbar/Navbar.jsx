@@ -40,6 +40,9 @@ const Navbar = () => {
         <div className={`${s.item} ${s.active}`}>
         <NavLink to="/formreact2" activeClassName={s.activeLink}>FormReactHook2</NavLink>
         </div>
+        <div className={`${s.item} ${s.active}`}>
+        <NavLink to="/formreact3" activeClassName={s.activeLink}>FormReactHook3</NavLink>
+        </div>
         
       
     </nav>

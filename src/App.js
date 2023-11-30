@@ -16,7 +16,7 @@ import WindowDialog from "./components/WindowDialog/WindowDialog";
 import Forms from "./components/Form/Form";
 import FormReactHook from "./components/FormReactHook/FormReactHook";
 import FormReactHook2 from "./components/FormReactHook2/FormReactHook2";
-
+import FormReactHook3 from "./components/FormReactHook3/FormReactHook3";
 const App = (props) => {
   return (
     <BrowserRouter>
@@ -46,6 +46,7 @@ const App = (props) => {
             <Route path="/forms" element={<Forms />} />
             <Route path="/formreact" element={<FormReactHook />} />
             <Route path="/formreact2" element={<FormReactHook2/>} />
+            <Route path="/formreact3" element={<FormReactHook3/>} />
           </Routes>
           {/* <Profile/> */}
           {/* <Dialogs/> */}
