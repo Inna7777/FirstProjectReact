@@ -1,5 +1,18 @@
 import React from "react";
-import { useForm  } from "react-hook-form";
+import { Controller, useForm  } from "react-hook-form";
+import  ReactSelect from "react-select";
+
+const options = [
+  { value: 'Russia', label: 'Russia' },
+  { value: 'USA', label: 'USA' },
+  { value: 'French', label: 'Franch' }
+];
+
+const getValue = (value) => {
+  return (
+    value ? options.find((option) => option.value === value) : ''
+  );
+}
 
 const FormReactHook2 = () => {
   const {
@@ -8,21 +21,18 @@ const FormReactHook2 = () => {
     formState: { errors },
     reset,
     watch, //отслеживает переменные
-    setValue    
-   
-  } = useForm(
-    //при каких событиях должен срабатывать
+    setValue,
+    control
+  } = useForm({ mode: "onChange" });
 
-    { mode: "onChange" }
-  );
   const onSubmit = (data) => {
-    // функция принимает все поля формы (обработчик формы)
-    alert(`Your name ${data.name}, Your name ${data.email}`);
+    alert(`Your name ${data.name}, Your email ${data.email}`);
     reset();
   };
 
-  const watchName = watch('name',)
-  React.useEffect(() => { // помогает отследить работу функций и переменных
+  const watchName = watch('name');
+
+  React.useEffect(() => {
     const subscription = watch((value, { name, type }) =>
       console.log(value, name, type)
     )
@@ -39,11 +49,9 @@ const FormReactHook2 = () => {
           type="text"
           placeholder="Name"
         />
-        {/* Сообщение об ошибке */}
         {errors?.name && (
           <div style={{ color: "red" }}>{errors?.name?.message}</div>
         )}
-        {/* <div style={{color: 'red'}}>{errors?.name && <p> {errors?.name?.message || 'Eroor!'}</p>}</div> */}
 
         <input
           {...register("email", {
@@ -60,13 +68,34 @@ const FormReactHook2 = () => {
         {errors?.email && (
           <div style={{ color: "red" }}>{errors?.email?.message}</div>
         )}
-        <button>Отправить</button>
-       
-      </form> 
-      <button onClick={()=> { // заполнить поля определенными значениями
-            setValue('name', 'max')
-            setValue('email', 'test@mail.ru')
-        }}>Fill data</button>
+
+        <Controller
+          control={control}
+          name="adress.country"
+          rules={{
+            required: 'Country is required!',
+          }}
+          render={({ field: { onChange, value }, fieldState: { error } }) => (
+            <div>
+              <ReactSelect
+                placeholder='Countries'
+                options={options}
+                value={getValue(value)}
+                onChange={(newValue) => onChange(newValue.value)}
+              />
+              {error && <div style={{ color: "red" }}>{error.message}</div>}
+            </div>
+          )}
+        />
+
+        <div>
+          <button>Отправить</button>
+        </div>
+      </form>
+      <button onClick={() => {
+        setValue('name', 'max');
+        setValue('email', 'test@mail.ru');
+      }}>Fill data</button>
     </div>
   );
 };
